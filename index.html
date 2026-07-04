@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mitra Pasir Beton — pemasok pasir beton berkualitas untuk proyek gedung, jalan, dan infrastruktur.">
+  <title>Mitra Pasir Beton | Supply Pasir untuk Konstruksi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#17201f',
+            coal: '#23302e',
+            sand: '#f3efe6',
+            orange: '#ef7b2d',
+            moss: '#31564e'
+          },
+          fontFamily: {
+            sans: ['DM Sans', 'sans-serif'],
+            display: ['Manrope', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#f8f7f3] text-ink antialiased">
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="mx-auto max-w-[1440px] px-5 lg:px-10">
+      <nav class="mt-4 flex h-[76px] items-center justify-between rounded-2xl border border-white/20 bg-[#17201f]/80 px-5 text-white shadow-xl shadow-black/10 backdrop-blur-xl lg:px-7" aria-label="Navigasi utama">
+        <a href="#home" class="flex items-center gap-3" aria-label="Mitra Pasir Beton - Beranda">
+          <span class="grid h-11 w-11 place-items-center rounded-xl bg-orange text-white shadow-lg shadow-orange/20">
+            <svg viewBox="0 0 40 40" class="h-7 w-7" fill="none" aria-hidden="true"><path d="M6 28.5 20 7l14 21.5H6Z" fill="currentColor" opacity=".95"/><path d="M12.5 28.5 20 17l7.5 11.5h-15Z" fill="#17201f"/><path d="M5 32.5h30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </span>
+          <span class="font-display text-[15px] font-extrabold leading-tight tracking-tight sm:text-base">MITRA PASIR<br><span class="text-orange">BETON</span></span>
+        </a>
+
+        <div class="hidden items-center gap-8 text-sm font-semibold lg:flex">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="projects.html">Project</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+
+        <a href="contact.html" class="hidden items-center gap-2 rounded-xl bg-orange px-5 py-3 text-sm font-bold transition hover:bg-[#ff9149] lg:flex">
+          Minta Penawaran
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+
+        <button id="menu-button" class="grid h-11 w-11 place-items-center rounded-xl border border-white/15 lg:hidden" aria-label="Buka menu" aria-expanded="false">
+          <span class="menu-icon block w-5"><i></i><i></i><i></i></span>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="pointer-events-none absolute left-5 right-5 top-[100px] translate-y-[-10px] rounded-2xl border border-white/10 bg-ink p-3 text-white opacity-0 shadow-2xl transition-all duration-300 lg:hidden">
+        <a class="mobile-link" href="index.html">Home</a>
+        <a class="mobile-link" href="about.html">About Us</a>
+        <a class="mobile-link" href="services.html">Services</a>
+        <a class="mobile-link" href="projects.html">Project</a>
+        <a class="mobile-link" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="relative min-h-[820px] overflow-hidden bg-ink text-white lg:min-h-[880px]">
+      <img src="assets/hero-supply.webp" alt="Armada Mitra Pasir Beton sedang memuat material untuk proyek konstruksi" class="absolute inset-0 h-full w-full object-cover object-[62%_center]">
+      <div class="hero-overlay absolute inset-0"></div>
+      <div class="absolute -left-24 bottom-[-120px] h-80 w-80 rounded-full bg-orange/20 blur-3xl"></div>
+
+      <div class="relative mx-auto flex min-h-[820px] max-w-[1440px] items-end px-5 pb-16 pt-36 lg:min-h-[880px] lg:items-center lg:px-10 lg:pb-0 lg:pt-24">
+        <div class="max-w-3xl reveal">
+          <div class="mb-7 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 py-2 pl-2 pr-4 text-xs font-bold uppercase tracking-[.15em] backdrop-blur-md">
+            <span class="grid h-7 w-7 place-items-center rounded-full bg-orange">
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>
+            </span>
+            Partner Material Konstruksi Tepercaya
+          </div>
+          <h1 class="font-display text-[45px] font-extrabold leading-[1.03] tracking-[-.04em] sm:text-6xl lg:text-[78px]">
+            Fondasi Kuat Dimulai dari <span class="text-orange">Material Tepat.</span>
+          </h1>
+          <p class="mt-7 max-w-xl text-base leading-7 text-white/75 sm:text-lg">Supply pasir beton berkualitas, volume terukur, dan pengiriman tepat waktu untuk pembangunan gedung, jalan, serta infrastruktur Anda.</p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="contact.html" class="group inline-flex items-center justify-center gap-3 rounded-xl bg-orange px-6 py-4 font-bold transition hover:-translate-y-0.5 hover:bg-[#ff9149]">
+              Konsultasi Kebutuhan
+              <span class="grid h-7 w-7 place-items-center rounded-full bg-white/20 transition group-hover:translate-x-1">→</span>
+            </a>
+            <a href="#projects" class="inline-flex items-center justify-center gap-3 rounded-xl border border-white/25 bg-white/5 px-6 py-4 font-bold backdrop-blur-sm transition hover:bg-white/10">
+              Lihat Proyek Kami
+            </a>
+          </div>
+        </div>
+
+        <div class="absolute bottom-8 right-10 hidden items-center gap-8 rounded-2xl border border-white/15 bg-black/25 px-7 py-5 backdrop-blur-xl xl:flex">
+          <div><strong class="font-display text-3xl">12+</strong><span class="mt-1 block text-xs text-white/60">Tahun Pengalaman</span></div>
+          <span class="h-10 w-px bg-white/15"></span>
+          <div><strong class="font-display text-3xl">1.2K</strong><span class="mt-1 block text-xs text-white/60">Pengiriman Selesai</span></div>
+          <span class="h-10 w-px bg-white/15"></span>
+          <div><strong class="font-display text-3xl">98%</strong><span class="mt-1 block text-xs text-white/60">Klien Puas</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-black/5 bg-[#f1eee6]">
+      <div class="mx-auto grid max-w-[1440px] grid-cols-2 gap-px bg-black/5 px-5 sm:grid-cols-4 lg:px-10">
+        <div class="stat-cell"><span>01</span><strong>Kualitas Teruji</strong></div>
+        <div class="stat-cell"><span>02</span><strong>Volume Akurat</strong></div>
+        <div class="stat-cell"><span>03</span><strong>Armada Siap</strong></div>
+        <div class="stat-cell"><span>04</span><strong>Tepat Waktu</strong></div>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell overflow-hidden">
+      <div class="mx-auto max-w-[1440px] px-5 lg:px-10">
+        <div class="grid items-center gap-12 lg:grid-cols-[.95fr_1.05fr] lg:gap-20">
+          <div class="relative reveal">
+            <div class="image-frame aspect-[4/5] overflow-hidden rounded-[28px] bg-coal sm:aspect-[5/4] lg:aspect-[4/5]">
+              <img src="assets/hero-supply.webp" alt="Operasional supply pasir beton" class="h-full w-full object-cover object-[75%_center]" loading="lazy">
+            </div>
+            <div class="absolute -bottom-6 -right-2 max-w-[235px] rounded-2xl bg-orange p-6 text-white shadow-2xl sm:right-6">
+              <svg viewBox="0 0 24 24" class="mb-5 h-8 w-8" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-7h6v7"/></svg>
+              <strong class="font-display text-xl">Bertumbuh Bersama Proyek Anda</strong>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <p class="eyebrow">Sekilas Tentang Kami</p>
+            <h2 class="section-title">Lebih dari pemasok, kami adalah <span>mitra pembangunan.</span></h2>
+            <p class="mt-6 text-base leading-8 text-black/60">Mitra Pasir Beton hadir untuk memastikan proyek konstruksi mendapat material berkualitas tanpa hambatan. Sejak 2012, kami melayani kontraktor, pengembang, dan proyek pemerintah dengan sistem supply yang rapi dan transparan.</p>
+            <p class="mt-4 text-base leading-8 text-black/60">Kami memahami bahwa setiap ritase memengaruhi jadwal. Karena itu, ketepatan kualitas, volume, dan waktu menjadi standar kerja kami.</p>
+
+            <div class="mt-9 grid gap-4 sm:grid-cols-2">
+              <div class="mini-card">
+                <span class="icon-box">◎</span>
+                <div><strong>Visi</strong><p>Menjadi mitra material konstruksi paling andal di Indonesia.</p></div>
+              </div>
+              <div class="mini-card">
+                <span class="icon-box">↗</span>
+                <div><strong>Misi</strong><p>Memberi supply berkualitas dengan layanan yang konsisten.</p></div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-x-7 gap-y-3 border-t border-black/10 pt-7 text-sm font-bold">
+              <span class="check-item">Integritas</span>
+              <span class="check-item">Kualitas</span>
+              <span class="check-item">Ketepatan</span>
+              <span class="check-item">Kemitraan</span>
+            </div>
+            <a href="about.html" class="mt-8 inline-flex items-center gap-3 font-bold text-orange">Pelajari Tentang Kami <span class="text-xl">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-shell bg-coal text-white">
+      <div class="mx-auto max-w-[1440px] px-5 lg:px-10">
+        <div class="flex flex-col justify-between gap-7 lg:flex-row lg:items-end">
+          <div class="max-w-2xl reveal">
+            <p class="eyebrow text-orange">Layanan Kami</p>
+            <h2 class="section-title text-white">Supply material yang bergerak secepat <span>proyek Anda.</span></h2>
+          </div>
+          <p class="max-w-md text-sm leading-7 text-white/55 lg:text-right">Dari perencanaan volume hingga pengiriman ke lokasi, tim kami mendampingi kebutuhan proyek secara menyeluruh.</p>
+        </div>
+
+        <div class="mt-14 grid gap-5 md:grid-cols-3">
+          <article class="service-card reveal">
+            <div class="service-no">01</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 17h18M5 17l3-9h8l3 9M8 12h8M7 21h10"/></svg>
+            </div>
+            <h3>Supply Pasir Beton</h3>
+            <p>Pasir berkualitas dengan karakter material yang sesuai untuk cor, beton ready mix, dan kebutuhan struktur.</p>
+            <ul><li>Material terseleksi</li><li>Kadar lumpur terkontrol</li><li>Volume sesuai pesanan</li></ul>
+          </article>
+          <article class="service-card featured reveal">
+            <div class="service-no">02</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7zM6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM18 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg>
+            </div>
+            <h3>Pengiriman Proyek</h3>
+            <p>Armada terkoordinasi untuk pengiriman terjadwal maupun kebutuhan supply berkelanjutan.</p>
+            <ul><li>Jadwal fleksibel</li><li>Armada terawat</li><li>Monitoring pengiriman</li></ul>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-no">03</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 19V5h16v14H4ZM8 15l3-3 2 2 3-4 2 2M8 9h4"/></svg>
+            </div>
+            <h3>Konsultasi Kebutuhan</h3>
+            <p>Perhitungan kebutuhan material berdasarkan skala, jenis pekerjaan, dan ritme pelaksanaan proyek.</p>
+            <ul><li>Estimasi volume</li><li>Rekomendasi material</li><li>Rencana supply</li></ul>
+          </article>
+        </div>
+        <div class="mt-10 text-center"><a href="services.html" class="inline-flex items-center gap-3 rounded-xl border border-white/20 px-6 py-3.5 text-sm font-bold transition hover:border-orange hover:bg-orange">Lihat Detail Semua Layanan <span>→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section-shell bg-[#efede6]">
+      <div class="mx-auto max-w-[1440px] px-5 lg:px-10">
+        <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
+          <div class="reveal">
+            <p class="eyebrow">Mengapa Kami</p>
+            <h2 class="section-title">Standar tinggi di setiap <span>ritase.</span></h2>
+            <p class="mt-6 text-black/55 leading-7">Sistem kerja yang dapat diandalkan membuat proyek Anda tetap bergerak sesuai target.</p>
+            <a href="contact.html" class="mt-8 inline-flex items-center gap-3 font-bold text-orange">Diskusikan Proyek Anda <span class="text-xl">→</span></a>
+          </div>
+          <div class="grid gap-px overflow-hidden rounded-3xl bg-black/10 sm:grid-cols-2 reveal">
+            <div class="usp-card"><span>01</span><h3>Kualitas Konsisten</h3><p>Material diseleksi agar mutu yang sampai di lokasi selalu terjaga.</p></div>
+            <div class="usp-card"><span>02</span><h3>Harga Kompetitif</h3><p>Penawaran transparan sesuai volume dan jarak pengiriman proyek.</p></div>
+            <div class="usp-card"><span>03</span><h3>Respon Cepat</h3><p>Tim responsif dari konsultasi awal hingga koordinasi lapangan.</p></div>
+            <div class="usp-card"><span>04</span><h3>Supply Terukur</h3><p>Pengiriman tercatat rapi untuk memudahkan kontrol kebutuhan Anda.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-shell">
+      <div class="mx-auto max-w-[1440px] px-5 lg:px-10">
+        <div class="flex flex-col justify-between gap-7 md:flex-row md:items-end">
+          <div class="max-w-2xl reveal"><p class="eyebrow">Proyek Pilihan</p><h2 class="section-title">Material kami, bagian dari <span>karya nyata.</span></h2></div>
+          <div class="flex gap-2">
+            <button class="slider-btn" id="prev-project" aria-label="Proyek sebelumnya">←</button>
+            <button class="slider-btn active" id="next-project" aria-label="Proyek berikutnya">→</button>
+          </div>
+        </div>
+
+        <div id="project-track" class="project-track mt-12">
+          <article class="project-card">
+            <img src="assets/project-road.webp" alt="Supply material untuk pembangunan jalan kabupaten" loading="lazy">
+            <div class="project-info"><span>Infrastruktur Jalan</span><h3>Pembangunan Jalan Kabupaten</h3><p>Bogor, Jawa Barat · 2024</p></div>
+          </article>
+          <article class="project-card">
+            <img src="assets/hero-supply.webp" alt="Supply pasir beton untuk gedung komersial" loading="lazy">
+            <div class="project-info"><span>Gedung Komersial</span><h3>Kompleks Bisnis Terpadu</h3><p>Tangerang, Banten · 2023</p></div>
+          </article>
+          <article class="project-card">
+            <img src="assets/project-road.webp" alt="Supply material untuk proyek kawasan industri" loading="lazy">
+            <div class="project-info"><span>Kawasan Industri</span><h3>Perluasan Area Logistik</h3><p>Bekasi, Jawa Barat · 2024</p></div>
+          </article>
+        </div>
+        <div class="mt-10 text-center"><a href="projects.html" class="inline-flex items-center gap-3 rounded-xl bg-ink px-6 py-3.5 text-sm font-bold text-white transition hover:bg-orange">Jelajahi Semua Proyek <span>→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section-shell overflow-hidden bg-sand">
+      <div class="mx-auto max-w-[1440px] px-5 lg:px-10">
+        <div class="grid gap-12 lg:grid-cols-[.75fr_1.25fr] lg:gap-20">
+          <div class="reveal">
+            <p class="eyebrow">Kata Mereka</p>
+            <h2 class="section-title">Kepercayaan yang kami <span>jaga.</span></h2>
+            <div class="mt-7 flex items-center gap-3"><div class="flex text-orange">★★★★★</div><span class="text-sm text-black/50">4.9 dari mitra proyek</span></div>
+          </div>
+          <div class="testimonial reveal">
+            <svg viewBox="0 0 48 48" class="h-12 w-12 text-orange" fill="currentColor"><path d="M11 8h13v13H13c0 7 4 11 10 13v6C12 39 7 32 7 21V8h4Zm21 0h13v13H34c0 7 4 11 10 13v6c-11-1-16-8-16-19V8h4Z"/></svg>
+            <blockquote>“Koordinasi pengiriman Mitra Pasir Beton sangat rapi. Volume sesuai, jadwal masuk tepat, dan tim mereka cepat merespons perubahan kebutuhan di lapangan.”</blockquote>
+            <div class="mt-8 flex items-center gap-4"><div class="avatar">AR</div><div><strong>Andi Rahmat</strong><span>Project Manager, PT Karya Utama</span></div></div>
+          </div>
+        </div>
+
+        <div class="mt-16 border-t border-black/10 pt-10">
+          <p class="mb-7 text-center text-xs font-bold uppercase tracking-[.2em] text-black/35">Dipercaya oleh mitra konstruksi</p>
+          <div class="grid grid-cols-2 gap-4 text-center font-display font-extrabold text-black/30 sm:grid-cols-4">
+            <span>ARKA<br>CONSTRUCTION</span><span>BUANA<br>PROPERTI</span><span>NUSA<br>INFRA</span><span>KARYA<br>UTAMA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell bg-ink text-white">
+      <div class="mx-auto max-w-[1440px] px-5 lg:px-10">
+        <div class="grid overflow-hidden rounded-[30px] bg-[#24302e] lg:grid-cols-[.9fr_1.1fr]">
+          <div class="relative overflow-hidden p-7 sm:p-10 lg:p-14">
+            <div class="absolute -bottom-36 -left-24 h-80 w-80 rounded-full bg-orange/15 blur-3xl"></div>
+            <div class="relative">
+              <p class="eyebrow text-orange">Hubungi Kami</p>
+              <h2 class="font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">Mari mulai percakapan tentang proyek Anda.</h2>
+              <p class="mt-5 max-w-md leading-7 text-white/55">Ceritakan kebutuhan material Anda. Tim kami akan membantu menyiapkan estimasi dan jadwal supply terbaik.</p>
+
+              <div class="mt-10 space-y-5">
+                <a class="contact-row" href="tel:+6281234567890"><span>☎</span><div><small>Telepon / WhatsApp</small><strong>+62 812 3456 7890</strong></div></a>
+                <a class="contact-row" href="mailto:halo@mitrapasirbeton.co.id"><span>✉</span><div><small>Email</small><strong>halo@mitrapasirbeton.co.id</strong></div></a>
+                <div class="contact-row"><span>⌖</span><div><small>Area Operasional</small><strong>Jabodetabek & Sekitarnya</strong></div></div>
+              </div>
+
+              <div class="mt-10 flex gap-3">
+                <a class="social-btn" href="#" aria-label="Instagram">ig</a><a class="social-btn" href="#" aria-label="Facebook">f</a><a class="social-btn" href="#" aria-label="LinkedIn">in</a>
+              </div>
+            </div>
+          </div>
+
+          <form id="contact-form" class="bg-white p-7 text-ink sm:p-10 lg:p-14">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <label class="field"><span>Nama Lengkap</span><input type="text" name="name" placeholder="Nama Anda" required></label>
+              <label class="field"><span>Nomor WhatsApp</span><input type="tel" name="phone" placeholder="08xx xxxx xxxx" required></label>
+              <label class="field sm:col-span-2"><span>Email</span><input type="email" name="email" placeholder="nama@perusahaan.com"></label>
+              <label class="field sm:col-span-2"><span>Jenis Kebutuhan</span><select name="service" required><option value="">Pilih kebutuhan</option><option>Supply Pasir Beton</option><option>Pengiriman Proyek</option><option>Konsultasi Volume</option></select></label>
+              <label class="field sm:col-span-2"><span>Pesan</span><textarea name="message" rows="4" placeholder="Ceritakan lokasi, volume, dan jadwal proyek Anda..."></textarea></label>
+            </div>
+            <button type="submit" class="mt-6 flex w-full items-center justify-center gap-3 rounded-xl bg-orange px-6 py-4 font-bold text-white transition hover:bg-[#db6820]">Kirim Permintaan <span>→</span></button>
+            <p id="form-status" class="mt-4 hidden rounded-xl bg-green-50 p-3 text-center text-sm font-semibold text-green-700">Terima kasih! Pesan Anda telah kami terima.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#101716] text-white">
+    <div class="mx-auto max-w-[1440px] px-5 py-12 lg:px-10">
+      <div class="flex flex-col justify-between gap-8 border-b border-white/10 pb-10 md:flex-row md:items-center">
+        <a href="#home" class="flex items-center gap-3"><span class="grid h-11 w-11 place-items-center rounded-xl bg-orange">▲</span><span class="font-display font-extrabold leading-tight">MITRA PASIR<br><span class="text-orange">BETON</span></span></a>
+        <p class="max-w-md text-sm leading-6 text-white/45 md:text-right">Supply pasir beton berkualitas untuk pembangunan yang lebih kokoh, efisien, dan tepat waktu.</p>
+      </div>
+      <div class="flex flex-col justify-between gap-4 pt-7 text-xs text-white/35 sm:flex-row">
+        <p>© <span id="year"></span> Mitra Pasir Beton. Hak cipta dilindungi.</p>
+        <div class="flex gap-6"><a href="#">Kebijakan Privasi</a><a href="#">Syarat & Ketentuan</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/6281234567890" class="whatsapp" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp">WA</a>
+  <script src="script.js"></script>
+</body>
+</html>
